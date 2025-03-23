@@ -11,12 +11,15 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  base: "/abhishekchavan1-abhishekchavan/", // Add your GitHub repository name here
+  build: {
+    outDir: "docs", // The output directory to be used by GitHub Pages
   },
 }));
