@@ -31,7 +31,7 @@ const Projects = () => {
       id: 2,
       title: 'Multigrade Brain Tumor Detection',
       description: 'An intelligent system to detect different grades of brain tumor using deeplearning.',
-      image: 'public/images.jpeg',
+      image: '/images.jpeg',
       technologies: ['BERT', 'Hugging Face', 'CNN'],
       category: 'nlp',
       github: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/mldl/denseefficient.ipynb',
@@ -51,7 +51,7 @@ const Projects = () => {
       id: 4,
       title: 'Image Generation with GANs',
       description: 'A creative image generation system using StyleGAN2 with custom transfer learning capabilities.',
-      image: 'public/180703-cervical-smear-hpv-infection-se-1158a.jpg',
+      image: '/180703-cervical-smear-hpv-infection-se-1158a.jpg',
       technologies: ['TensorFlow', 'GANs', 'CUDA', 'Python'],
       category: 'dl',
       github: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/ganFinal.ipynb',
@@ -71,7 +71,7 @@ const Projects = () => {
       id: 6,
       title: 'Product Recommendation System',
       description: 'An automated pipeline for continuous training and evaluation of ML models with drift detection.',
-      image: 'public/1631452281143.jpeg',
+      image: '/1631452281143.jpeg',
       technologies: ['Machine Learning', 'Sklearn', 'Pandas', 'Python'],
       category: 'mlops',
       github: 'https://github.com/AbhishekChavan1/Recommendation-System',
@@ -176,7 +176,7 @@ const Projects = () => {
       
       <div className="mt-12 text-center">
         <Link
-          to="/projects"
+          to="https://github.com/AbhishekChavan1/"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary text-primary font-medium transition-all hover:bg-primary hover:text-white"
         ><a href= "https://github.com/AbhishekChavan1/" target="_blank">View All Projects</a>
            <ArrowRight size={16} />

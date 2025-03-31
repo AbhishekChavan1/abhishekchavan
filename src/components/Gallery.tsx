@@ -11,15 +11,15 @@ const Gallery = () => {
   
   const galleryItems = [
     {
-      src: 'https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      title: 'TensorFlow Developer Certificate',
-      description: 'Certification received for demonstrating proficiency in building models with TensorFlow',
+      src: '/WhatsApp Image 2025-03-31 at 22.55.20_eee82991.jpg',
+      title: 'Artimas Datathon Certificate',
+      description: 'Certification received for participating in Datathon.',
       category: 'certificate'
     },
     {
-      src: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '/Screenshot 2025-03-31 230458.png',
       title: 'AI Conference Presentation',
-      description: 'Presenting research findings at the International AI Conference 2023',
+      description: 'Presenting research findings at the International AI IEEE Conference 2024',
       category: 'event'
     },
     {
@@ -29,16 +29,16 @@ const Gallery = () => {
       category: 'project'
     },
     {
-      src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '/Screenshot 2025-03-31 230540.png',
       title: 'Deep Learning Workshop',
       description: 'Leading a workshop on deep learning fundamentals for beginners',
-      category: 'event'
+      category: 'certificate'
     },
     {
-      src: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      title: 'AWS Machine Learning Specialty',
-      description: 'Certification for machine learning expertise on AWS platform',
-      category: 'certificate'
+      src: '/IMG-20250228-WA0005[1].jpg',
+      title: 'Hackathon',
+      description: 'Developing a Rag based model at Cavista Hackathon',
+      category: 'event'
     },
     {
       src: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
