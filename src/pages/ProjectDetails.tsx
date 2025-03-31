@@ -16,29 +16,28 @@ const ProjectDetails = () => {
     const timeout = setTimeout(() => {
       const projectData = {
         id: Number(id),
-        title: 'ObjectDetectionX',
-        subtitle: 'Real-time object detection with custom training pipeline',
-        description: 'A comprehensive object detection system built with YOLOv5, featuring custom dataset training, model optimization, and deployment capabilities.',
+        title: 'My Projects',
+        subtitle: 'Join me in my project and learning journey',
+        description: 'A collaborative journey into building a cutting-edge object detection system using AI models, with custom dataset training, model optimization, and deployment capabilities.',
         longDescription: `
-          ObjectDetectionX is a state-of-the-art computer vision project that enables real-time object detection across various applications. The system is built on top of YOLOv5 architecture with significant customizations to improve accuracy and inference speed.
-          
-          The project includes a complete pipeline from data collection and annotation to model training, optimization, and deployment. Custom data augmentation techniques were implemented to enhance model generalization, while TensorRT was used for optimizing inference speed.
-          
-          The system can be deployed on various platforms including edge devices, cloud servers, and mobile applications. It features an intuitive API for seamless integration with existing applications.
+          Join me in my project and learning journey as I develop ObjectDetectionX, an advanced real-time object detection system. Built on YOLOv5, this project explores custom dataset training, model optimization, and deployment across various platforms.
+From data collection and annotation to model fine-tuning and inference speed optimization using TensorRT, every step is designed to enhance accuracy and efficiency. The system supports deployment on edge devices, cloud servers, and mobile applications, with an intuitive API for seamless integration.
+This project is not just about building technology—it's a learning experience. Follow along as I share insights, challenges, and breakthroughs in computer vision!"
+Would you like any further refinements? 🚀
         `,
-        image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+        image: '/istockphoto-155598384-612x612.jpg',
         images: [
-          'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          'https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-          'https://images.unsplash.com/photo-1600695268275-1a6468700bd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
+          '/180703-cervical-smear-hpv-infection-se-1158a.jpg',
+          '/what-is-generative-adversarial-networks.jpg',
+          '/360_F_1132382710_Pesfj8dAs7cLjdIFxk5nXcPr3P0a3lxA.jpg',
         ],
         technologies: ['PyTorch', 'OpenCV', 'YOLO', 'Docker', 'TensorRT', 'Python', 'Flask'],
         category: 'Computer Vision',
-        github: 'https://github.com',
-        demo: 'https://demo.com',
+        github: 'https://github.com/AbhishekChavan1/',
+        demo: 'https://github.com/AbhishekChavan1/',
         date: 'June 2023',
         features: [
-          'Real-time object detection with 30+ FPS on standard hardware',
+          'Real-time detection with on standard hardware',
           'Custom dataset training pipeline with advanced augmentation',
           'Model optimization for edge deployment',
           'Comprehensive API for easy integration',
@@ -51,10 +50,10 @@ const ProjectDetails = () => {
           'Implementing efficient post-processing techniques',
         ],
         outcomes: [
-          '25% improvement in detection accuracy compared to baseline',
-          '40% reduction in inference time through optimization',
-          'Successful deployment across diverse hardware configurations',
-          'Support for 80+ object categories with high precision',
+          '5% improvement in detection of brain tumor accuracy compared to baseline.',
+          '10% reduction in inference time through optimization.',
+          'Successful deployment across diverse hardware configurations.',
+          'Developed GAN which helps Doctors for creating artificial images of cancer.',
         ],
       };
       
