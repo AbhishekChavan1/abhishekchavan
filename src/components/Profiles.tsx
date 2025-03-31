@@ -40,7 +40,7 @@ const Profiles = () => {
       name: 'Kaggle',
       icon: Award,
       username: 'Top 5% Kaggler',
-      link: 'https://www.kaggle.com/a47abhishekchavan',
+      link: 'https://www.kaggle.com/abhishekchavan01',
       description: 'View my competition entries and notebooks on machine learning',
     },
     {

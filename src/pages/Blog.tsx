@@ -21,31 +21,31 @@ const Blog = () => {
   const posts = [
     {
       id: 1,
-      title: 'Understanding Transformer Architecture for NLP Tasks',
-      excerpt: 'An in-depth exploration of transformer models and their applications in natural language processing.',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, ipsum eget aliquet ultricies, nisl nisl aliquam nisl, eu aliquam nisl nisl eu nisl.',
-      image: 'https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      date: 'May 20, 2023',
+      title: 'Building and Training a GAN from Scratch',
+      excerpt: 'An in-depth exploration of gan models and their development with pytorch.',
+      link : 'https://medium.com/@abhishekchavan2714/building-and-training-a-gan-from-scratch-d7d78f07e61b',
+      image: '/what-is-generative-adversarial-networks.jpg',
+      date: 'March 31, 2025',
       category: 'nlp',
       tags: ['transformers', 'bert', 'nlp', 'deep-learning'],
     },
     {
       id: 2,
-      title: 'Best Practices for Training Computer Vision Models',
+      title: 'Your Comprehensive Roadmap to Mastering AI: From Fundamentals to Generative Models',
       excerpt: 'Tips and techniques for efficient training of state-of-the-art computer vision models.',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, ipsum eget aliquet ultricies, nisl nisl aliquam nisl, eu aliquam nisl nisl eu nisl.',
-      image: 'https://images.unsplash.com/photo-1573164713619-24c711fe7878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
-      date: 'April 15, 2023',
+      link: 'https://medium.com/@abhishekchavan2714/your-comprehensive-roadmap-to-mastering-ai-from-fundamentals-to-generative-models-17d756f61b1e',
+      image: '/AI-image-3.png',
+      date: 'March 31, 2025',
       category: 'cv',
       tags: ['computer-vision', 'cnn', 'training', 'deep-learning'],
     },
     {
       id: 3,
-      title: 'Deploying ML Models with Kubernetes and TensorFlow Serving',
-      excerpt: 'A comprehensive guide to scaling and deploying machine learning models in production.',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, ipsum eget aliquet ultricies, nisl nisl aliquam nisl, eu aliquam nisl nisl eu nisl.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80',
-      date: 'March 8, 2023',
+      title: 'Developing CNN Models for Classification with TensorFlow',
+      excerpt: 'A comprehensive guide to scaling and developing deep learning models.',
+      link: 'https://medium.com/@abhishekchavan2714/multi-grade-brain-tumor-classification-2cfe2994c682',
+      image: '/gr1_lrg.jpg',
+      date: 'March 31, 2025',
       category: 'mlops',
       tags: ['kubernetes', 'deployment', 'tensorflow', 'production'],
     },
@@ -155,8 +155,9 @@ const Blog = () => {
                                 ))}
                               </div>
                               
-                              <span className="text-primary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                                Read Article <ChevronRight size={16} />
+                              <span className="text-primary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">                                
+                                <a key={post.id} href={post.link} target="_blank" rel="noopener noreferrer" className="block group">Read Article </a>
+                                <ChevronRight size={16} />
                               </span>
                             </div>
                           </div>

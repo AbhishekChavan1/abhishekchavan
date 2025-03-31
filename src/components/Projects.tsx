@@ -21,28 +21,28 @@ const Projects = () => {
       id: 1,
       title: 'SmartIndiaHackathon',
       description: 'A real-time plant disease detection system using cnn with custom dataset training pipeline.',
-      image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      technologies: ['PyTorch', 'OpenCV', 'YOLO', 'Docker'],
+      image: '/istockphoto-155598384-612x612.jpg',
+      technologies: ['PyTorch', 'OpenCV', 'YOLO'],
       category: 'cv',
       github: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/mldl/sih2.ipynb',
       demo: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/mldl/sih2.ipynb',
     },
     {
       id: 2,
-      title: 'NLP Document Analyzer',
-      description: 'An intelligent document analysis system for extracting key information using transformer models.',
-      image: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      technologies: ['BERT', 'Hugging Face', 'spaCy', 'FastAPI'],
+      title: 'Multigrade Brain Tumor Detection',
+      description: 'An intelligent system to detect different grades of brain tumor using deeplearning.',
+      image: 'public/images.jpeg',
+      technologies: ['BERT', 'Hugging Face', 'CNN'],
       category: 'nlp',
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      github: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/mldl/denseefficient.ipynb',
+      demo: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/mldl/denseefficient.ipynb',
     },
     {
       id: 3,
       title: 'Stock Price Prediction',
       description: 'A scalable stock price prediction model for deploying, monitoring in production.',
-      image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      technologies: ['Kubernetes', 'TensorFlow Serving', 'Prometheus', 'Grafana'],
+      image: '/stock-market-cycles-historical-chart.png',
+      technologies: ['Kubernetes', 'TensorFlow Serving', 'Prometheus'],
       category: 'mlops',
       github: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/mldl/rsistocks.ipynb',
       demo: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/mldl/rsistocks.ipynb',
@@ -51,7 +51,7 @@ const Projects = () => {
       id: 4,
       title: 'Image Generation with GANs',
       description: 'A creative image generation system using StyleGAN2 with custom transfer learning capabilities.',
-      image: 'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
+      image: 'public/180703-cervical-smear-hpv-infection-se-1158a.jpg',
       technologies: ['TensorFlow', 'GANs', 'CUDA', 'Python'],
       category: 'dl',
       github: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/ganFinal.ipynb',
@@ -61,21 +61,21 @@ const Projects = () => {
       id: 5,
       title: 'SpamHam classification',
       description: 'A robust SpamHam classification for real-time sentiment analysis on email data with multilingual support.',
-      image: 'https://images.unsplash.com/photo-1546775392-5e80d1313db6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      technologies: ['RoBERTa', 'FastAPI', 'Redis', 'AWS Lambda'],
+      image: '/360_F_1132382710_Pesfj8dAs7cLjdIFxk5nXcPr3P0a3lxA.jpg',
+      technologies: ['RoBERTa', 'Pytorch', 'GPU', 'Numpy'],
       category: 'nlp',
       github: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/mldl/SpamHam.ipynb',
       demo: 'https://github.com/AbhishekChavan1/Myprojects/blob/main/mldl/SpamHam.ipynb',
     },
     {
       id: 6,
-      title: 'ML Continuous Training Pipeline',
+      title: 'Product Recommendation System',
       description: 'An automated pipeline for continuous training and evaluation of ML models with drift detection.',
-      image: 'https://images.unsplash.com/photo-1603969409447-ba86143a03f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      technologies: ['Airflow', 'MLflow', 'Evidently AI', 'Python'],
+      image: 'public/1631452281143.jpeg',
+      technologies: ['Machine Learning', 'Sklearn', 'Pandas', 'Python'],
       category: 'mlops',
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      github: 'https://github.com/AbhishekChavan1/Recommendation-System',
+      demo: 'https://github.com/AbhishekChavan1/Recommendation-System',
     },
   ];
   
@@ -178,8 +178,8 @@ const Projects = () => {
         <Link
           to="/projects"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary text-primary font-medium transition-all hover:bg-primary hover:text-white"
-        >
-          View All Projects <ArrowRight size={16} />
+        ><a href= "https://github.com/AbhishekChavan1/" target="_blank">View All Projects</a>
+           <ArrowRight size={16} />
         </Link>
       </div>
     </section>
