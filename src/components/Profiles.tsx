@@ -1,6 +1,6 @@
 
 import { useRef } from 'react';
-import { Github, Twitter, Linkedin, Mail, Globe, Award,FileText,GraduationCap } from 'lucide-react';
+import { Github, Twitter, Linkedin, Bookmark,Mail, Globe, Award,FileText,GraduationCap } from 'lucide-react';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 const Profiles = () => {
@@ -44,9 +44,30 @@ const Profiles = () => {
       description: 'View my competition entries and notebooks on machine learning',
     },
     {
+      name: 'Google Cloud Skills',
+      icon: GraduationCap,
+      username: 'Google Cloud Badges',
+      link: 'https://www.cloudskillsboost.google/public_profiles/36cf42b9-b3c3-43e1-bdbc-7e4e7d4db98f', // Replace with your certificates folder link
+      description: 'See all my professional badges and completed courses from google cloud',
+    },
+    {
+      name: 'Credly',
+      icon: GraduationCap,
+      username: 'View All Badges',
+      link: 'https://www.credly.com/users/abhishek-chavan.2714', // Replace with your certificates folder link
+      description: 'See all my professional Badges at Credly',
+    },
+    {
+      name: 'Medium',
+      icon: Bookmark,
+      username: 'Blogger',
+      link: 'https://medium.com/@abhishekchavan2714m',
+      description: 'View and read my medium blogs about ai and ml.',
+    },
+    {
       name: 'Email',
       icon: Mail,
-      username: 'hello@gmail.com',
+      username: 'abhishekmc13051@gmail.com',
       link: 'mailto:abhishekmc13051@gmail.com',
       description: 'Reach out directly via email for collaborations or questions',
     },

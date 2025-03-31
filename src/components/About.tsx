@@ -11,9 +11,10 @@ const About = () => {
   const skills = [
     { name: 'Machine Learning', icon: Brain, description: 'Regression, Classification, Clustering, Dimensionality Reduction' },
     { name: 'Deep Learning', icon: Cpu, description: 'Neural Networks, CNN, RNN, Transformers, GANs' },
-    { name: 'Computer Vision', icon: Code, description: 'Object Detection, Image Classification, Segmentation' },
+    { name: 'Computer Vision', icon: Code, description: 'Object Detection, Image Classification, Segmentation, YOLO' },
     { name: 'Natural Language', icon: Database, description: 'Named Entity Recognition, Sentiment Analysis, Text Classification' },
-    { name: 'MLOps', icon: Server, description: 'Model Deployment, Monitoring, CI/CD for ML' },
+    { name: 'MLOps', icon: Server, description: 'Model Deployment, Monitoring, CI/CD for ML, Dockers' },
+    { name: 'Gen AI', icon: Brain, description: 'Langchain, Llama, Gemini, Transformers, Vector databases' },
   ];
   
   const certifications = [
