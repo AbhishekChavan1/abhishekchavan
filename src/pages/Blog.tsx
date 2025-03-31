@@ -156,7 +156,8 @@ const Blog = () => {
                               </div>
                               
                               <span className="text-primary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">                                
-                                <a key={post.id} href={post.link} target="_blank" rel="noopener noreferrer" className="block group">Read Article </a>
+                                <a key={post.id} href={post.link} target="_blank"  className="block group">
+                                  Read Article </a>
                                 <ChevronRight size={16} />
                               </span>
                             </div>
