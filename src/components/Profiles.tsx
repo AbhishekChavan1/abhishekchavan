@@ -61,7 +61,7 @@ const Profiles = () => {
       name: 'Medium',
       icon: Bookmark,
       username: 'Blogger',
-      link: 'https://medium.com/@abhishekchavan2714m',
+      link: 'https://medium.com/@abhishekchavan2714',
       description: 'View and read my medium blogs about ai and ml.',
     },
     {

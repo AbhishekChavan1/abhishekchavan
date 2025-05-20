@@ -23,7 +23,7 @@ const Blog = () => {
       id: 1,
       title: 'Building and Training a GAN from Scratch',
       excerpt: 'An in-depth exploration of gan models and their development with pytorch.',
-      link : 'https://medium.com/@abhishekchavan2714/building-and-training-a-gan-from-scratch-d7d78f07e61b',
+      link: 'https://medium.com/@abhishekchavan2714/building-and-training-a-gan-from-scratch-d7d78f07e61b',
       image: '/what-is-generative-adversarial-networks.jpg',
       date: 'March 31, 2025',
       category: 'nlp',
@@ -54,16 +54,16 @@ const Blog = () => {
   const filteredPosts = posts.filter(post => {
     const matchesCategory = activeCategory === 'all' || post.category === activeCategory;
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         post.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
-    
+      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      post.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+
     return matchesCategory && matchesSearch;
   });
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       <div className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
@@ -75,7 +75,7 @@ const Blog = () => {
               Insights, tutorials, and case studies on artificial intelligence, machine learning, and deep learning.
             </p>
           </div>
-          
+
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-3/4">
               <div className="mb-8 flex flex-col sm:flex-row gap-4">
@@ -89,30 +89,31 @@ const Blog = () => {
                   />
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-foreground/50" size={18} />
                 </div>
-                
+
                 <div className="flex overflow-x-auto no-scrollbar gap-2 pb-2 sm:pb-0">
                   {categories.map((category, index) => (
                     <button
                       key={index}
                       onClick={() => setActiveCategory(category.value)}
-                      className={`whitespace-nowrap px-4 py-3 rounded-lg text-sm font-medium transition-all ${
-                        activeCategory === category.value
+                      className={`whitespace-nowrap px-4 py-3 rounded-lg text-sm font-medium transition-all ${activeCategory === category.value
                           ? 'bg-primary text-white'
                           : 'bg-secondary text-foreground/70 hover:bg-secondary/70'
-                      }`}
+                        }`}
                     >
                       {category.name}
                     </button>
                   ))}
                 </div>
               </div>
-              
+
               <div className="space-y-6">
                 {filteredPosts.length > 0 ? (
                   filteredPosts.map(post => (
-                    <Link
+                    <a
                       key={post.id}
-                      to={`/blog/${post.id}`}
+                      href={post.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block group"
                     >
                       <div className="rounded-xl overflow-hidden bg-card border border-border shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
@@ -124,7 +125,7 @@ const Blog = () => {
                               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                           </div>
-                          
+
                           <div className="md:w-2/3 p-6 flex flex-col justify-between">
                             <div>
                               <div className="flex items-center gap-3 mb-3">
@@ -136,16 +137,16 @@ const Blog = () => {
                                   <span>{post.date}</span>
                                 </div>
                               </div>
-                              
+
                               <h2 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                                 {post.title}
                               </h2>
-                              
+
                               <p className="text-foreground/70 text-sm mb-4">
                                 {post.excerpt}
                               </p>
                             </div>
-                            
+
                             <div className="flex items-center justify-between">
                               <div className="flex flex-wrap gap-2">
                                 {post.tags.slice(0, 3).map((tag, tagIndex) => (
@@ -154,17 +155,16 @@ const Blog = () => {
                                   </span>
                                 ))}
                               </div>
-                              
-                              <span className="text-primary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">                                
-                                <a key={post.id} href={post.link} target="_blank"  className="block group">
-                                  Read Article </a>
+
+                              <span className="text-primary font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                                Read Article
                                 <ChevronRight size={16} />
                               </span>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </Link>
+                    </a>
                   ))
                 ) : (
                   <div className="text-center py-12">
@@ -176,7 +176,7 @@ const Blog = () => {
                 )}
               </div>
             </div>
-            
+
             <div className="md:w-1/4">
               <div className="bg-card rounded-xl border border-border p-6 shadow-md sticky top-32">
                 <h3 className="text-xl font-bold mb-6">Popular Tags</h3>
@@ -191,9 +191,9 @@ const Blog = () => {
                     </button>
                   ))}
                 </div>
-                
+
                 <div className="border-t border-border my-6"></div>
-                
+
                 <h3 className="text-xl font-bold mb-4">Recent Posts</h3>
                 <div className="space-y-4">
                   {posts.slice(0, 3).map(post => (
@@ -228,7 +228,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );
